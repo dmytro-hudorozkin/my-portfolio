@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Дмитро | Портфоліо</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <header class="header neon-text">
+      <div class="neon-wrapper">
+        <h1 class="glow">Худорожкін Дмитро</h1>
+        <div class="neon-line"></div>
+        <p class="subtitle">"Beginner Developer"</p>
+      </div>
+    </header>
+    <section class="section" id="about">
+      <div class="neon-container">
+        <h2 class="neon-heading pulse">👩 Про мене💻</h2>
+        <div class="profile-card card">
+          <img src="./photo.jpg" alt="Фото" class="profile-img" />
+          <div class="bio">
+            <p class="neon-paragraph">0 років досвіду у веб-розробці :]</p>
+            <div class="contacts">
+              <a href="mailto:jane@example.com" class="neon-link"
+                >📧 d.hydorozhkin@e-u.edu.ua</a
+              >
+              <a href="tel:+380991234567" class="neon-link"
+                >📱 +38 (050) 588-50-29</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="neon-container">
+        <h2 class="neon-heading pulse">🛠️ Навички</h2>
+        <div class="skill-card card">
+          <h3 class="skill-title">Frontend</h3>
+          <ul class="skill-list">
+            <li class="neon-item">
+              <span class="skill-name">HTML5</span>
+              <p class="skill-description">
+                Доступність, базові принципи SEO, верстка.
+              </p>
+            </li>
+            <li class="neon-item">
+              <span class="skill-name">Beginner JavaScript</span>
+              <p class="skill-description">
+                Базова робота з DOM, асинхронні операції, синтаксис
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="neon-container">
+        <h2 class="neon-heading pulse">🚀 Мої проекти</h2>
+        <div class="projects-grid">
+          <div class="project-card card" data-modal="project-modal">
+            <h3 class="project-title">Проект 1</h3>
+            <p class="project-description">Короткий опис проекту</p>
+            <button class="neon-button">Детальніше</button>
+          </div>
+          <div class="project-card card" data-modal="project-modal">
+            <h3 class="project-title">Проект 2</h3>
+            <p class="project-description">Короткий опис проекту</p>
+            <button class="neon-button">Детальніше</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="neon-container">
+        <h2 class="neon-heading pulse">📬 Зв'язок</h2>
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <input type="text" class="neon-input" placeholder="Ім'я" required />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              class="neon-input"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              class="neon-textarea"
+              placeholder="Повідомлення..."
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="neon-button">🚀 Надіслати</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="./src/main.js"></script>
+    <div id="project-modal" class="modal">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h2 class="neon-heading">Деталі проекту</h2>
+        <div class="project-details">
+          <p class="neon-paragraph">Тут мав бути детальний опис проекту... але його немає, як і моїх проектів</p>
+        </div>
+      </div>
+    </div>
+    
+    
+    <footer class="footer-social">
+      <div class="social-links">
+        <a href="https://t.me/SippinWocks" class="social-btn telegram" target="_blank" rel="noopener" title="Telegram">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="14" cy="14" r="14" fill="#2AABEE"/>
+            <path d="M21.5 8.5L18.5 20C18.5 20 18.1 21 17 20.5L12.5 16.5L10.5 18.5C10.5 18.5 10.3 18.7 10 18.5C9.7 18.3 9.8 18 9.8 18L11 13.5L18 10.5C18 10.5 18.5 10.3 18.2 10C17.9 9.7 17.3 9.9 17.3 9.9L7.5 13C7.5 13 6.5 13.3 6.5 12.5C6.5 11.7 7.7 11.3 7.7 11.3L20.5 7.5C20.5 7.5 21.5 7.2 21.5 8.5Z" fill="white"/>
+          </svg>
+        </a>
+        <a href="mailto:d.hydorozhkin@e-u.edu.ua" class="social-btn google" target="_blank" rel="noopener" title="Google Mail">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="28" height="28" rx="14" fill="#EA4335"/>
+            <path d="M7 10.5V17.5C7 18.0523 7.44772 18.5 8 18.5H20C20.5523 18.5 21 18.0523 21 17.5V10.5L14 15.5L7 10.5Z" fill="white"/>
+            <path d="M21 10.5V10C21 9.44772 20.5523 9 20 9H8C7.44772 9 7 9.44772 7 10V10.5L14 15.5L21 10.5Z" fill="#C5221F"/>
+          </svg>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
