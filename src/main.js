@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const submitButton = contactForm.querySelector("button[type='submit']");
       const originalText = submitButton.textContent;
       
-      // Показываем состояние загрузки
+      // состояние загрузки
       submitButton.textContent = "Відправляємо...";
       submitButton.disabled = true;
 
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Эффект волн при клике
+// эффект волн при клике
 document.addEventListener("click", (e) => {
   const wave = document.createElement("div");
   wave.className = "click-wave";
